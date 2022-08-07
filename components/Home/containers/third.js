@@ -17,7 +17,7 @@ const third = () => {
 
     try {
 
-      axios.post('http://localhost:27017/' , post).then(res =>{
+      axios.post('https://dentalfardin.herokuapp.com/' , post).then(res =>{
         if(res.data.errMessage){
           setErr(res.data.errMessage)
         }else{
